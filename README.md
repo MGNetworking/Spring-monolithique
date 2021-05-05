@@ -2,11 +2,15 @@
 Projet Spring boot de type monolithique dont l'objectif est la mise d'un service d'authentification des utilisateur.
 J'utilise le générateur de templat Thymeleaf qui permet de créer coté server le rendu html.
 
+Pour fair la jonction entre keycloak et Spring boot il faut ajouter un adaptateur Keycloak.
+
 ### Documentation projet
 
 * [Thymeleaf github](https://github.com/thymeleaf)
 * [Thymeleaf documentation](https://www.thymeleaf.org/documentation.html)
+* [Database in memory H2 ](https://www.h2database.com/html/main.html)
 * [Keyloak](https://www.keycloak.org/)
+* [Java web token documentation](https://jwt.io/introduction)
 
 ### Autre documentation 
 Pour plus de référence, voir les sections suivant :
