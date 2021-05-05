@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "5c79a0ab-6419-417f-857a-5cd21907a0b5",
+		"name": "Keycloak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Keycloak token d'acces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user_maxime",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "GkKwJrXz0301F6Iha9d3",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "products-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/ecom-realm/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"ecom-realm",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keycloak token de rafraîchissement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "products-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhZmRhZWM1NC0xYTM1LTRhYjUtOWQ3OS0xYzU1YzA4YTFjYzYifQ.eyJleHAiOjE2MjAyMjMxMzMsImlhdCI6MTYyMDIyMTMzMywianRpIjoiOTc2YzhiNGEtNzU1YS00OGI1LTlmNTEtZDUzZTgxYTU5N2U3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2Vjb20tcmVhbG0iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXV0aC9yZWFsbXMvZWNvbS1yZWFsbSIsInN1YiI6IjJkZjEyMzgzLTY2M2UtNGMzMi1iNzRlLTIxNTMwMzI5ZmNkMSIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJwcm9kdWN0cy1hcHAiLCJzZXNzaW9uX3N0YXRlIjoiY2M4YWRhOGEtM2NiOC00Mjg3LWFjYzctMWNiYWUzZjUxOTY5Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIn0.mALE9iBpAcobsc0Sl-FDB0IOWHGkFuYrFGlf3yznQgg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/ecom-realm/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"ecom-realm",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keycloak token d'acces user1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user_maxime",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "GkKwJrXz0301F6Iha9d3",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "products-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/ecom-realm/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"ecom-realm",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
