@@ -2,7 +2,33 @@
 Projet Spring boot de type monolithique dont l'objectif est la mise d'un service d'authentification des utilisateur.
 J'utilise le générateur de templat Thymeleaf qui permet de créer coté server le rendu html.
 
-Pour fair la jonction entre keycloak et Spring boot il faut ajouter un adaptateur Keycloak.
+Installé en mode standalone Keycloak puis dans le repertoir d'installation
+le démarrer le avec la commande sur windows :
+
+```bash
+bin\standalone.bat
+```
+
+Pour fair la jonction entre keycloak et Spring boot il faut ajouter un l'adaptateur Keycloak ci-dessous
+
+```xml
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-spring-boot-starter</artifactId>
+            <version>12.0.1</version>
+        </dependency>
+```
+
+apres avoir ajouter un realm puis quelque utilisateur , quel test peuvent étre effectuer via postman 
+est aussi directement avec l'application .
+
+Pour Postman voir dans le repertoir postman, le code d'accés user_maxime et user1 y sont volontaire laissé
+a titre d'exemple.
+Vous devez les utilisés dans votre configuration keycloak ou les modifier a votre convenance.
+
+Bien evidement en production vous ne devez laisser aucun code passe accessible.
+
+
 
 ### Documentation projet
 
